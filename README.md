@@ -43,3 +43,17 @@ Use the last parameter of the both the functions.
 
 
 Sample Usage:
+	<?php
+		require_once('phpconsole.php');
+	
+		$consolePHP = new PHPConsole();
+	
+		$consolePHP->console("hel\"lo","log","hello");   	// content, type and idenifier 
+		$consolePHP->console("nothing here","log");			// content and type only
+				
+		$consolePHP->clear();								// clear the console
+		
+	
+		$consolePHP->console($stringinput,"warning");		// warning type message using a string variable dump
+		$consolePHP->console("hel\"lo","log","hello",true);	// log with content, type identifier and also show the line number
+	?>
